@@ -1,3 +1,3 @@
 export class App {
-  public message = 'Hello World!';
+  sidebar : HTMLElement = document.getElementById("btn")
 }

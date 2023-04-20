@@ -4,23 +4,31 @@
   <div class="container">
         <div class="chat-container">
               <section class="chat-container-header-section">
-                    <h1>CRYO</h1>
+                    <img class="header-section-logo" src="./assets/images/chatbot.png" alt="Chatbot Logo">
+                    <h1 class="header-section-title">CRYO</h1>
+                    <section class="header-section-theme-button">
+                        <input class="theme-input" type="checkbox" name="theme" id="theme" />
+                        <label for="theme" class="theme-slider">
+                                <span class="theme-button"></span>
+                        </label>
+                    </section>
               </section>
               <ul class="chat-container-msg-section">
                     <li class="bot-chat-msg">
-                      <article class="bot-chat-msg-content">
-                        <p class="chat-msg-text">Something<p>
+                      <article class="chat-msg bot-chat-msg-content">
+                        <p class="chat-msg-text">Something seems like too odd but i guess its fine since time didnt pass away still<p>
                       </article>
                     </li>
                     <li class="user-chat-msg">
-                      <article class="user-chat-msg-content">
-                        <p class="chat-msg-text">Something<p>
+                      <article class="chat-msg user-chat-msg-content">
+                        <p class="chat-msg-text">SomethingNuminous drugs knife nodality vinyl weathered modem market footage silent. Tower youtube papier-mache nodality dissident neural fluidity gang courier disposable assault long-chain hydrocarbons neon San Francisco cartel refrigerator DIY. Apophenia courier hotdog kanji tattoo disposable silent beef noodles tube film corrupted Kowloon A.I.. Numinous towards assassin sprawl nano-sunglasses lights dolphin monofilament j-pop systema savant dome bridge 3D-printed. Pen motion order-flow fluidity systema receding singularity j-pop hotdog plastic towards. <p>
                       </article>
                     </li>
               </ul>
-              <section class="chat-container-input-section">
-                    <input class="msg-input" type="text" name="msg" placeholder="Type A Message..." />
-              </section>
+              <form class="chat-container-input-section">
+                    <textarea rows="1" class="msg-input" type="text" name="msg" placeholder="Type A Message..."></textarea>
+                    <button type="submit" class="msg-button"><i class="fa-solid fa-paper-plane"></i></button>
+              </form>
         </div>
   </div>
 </template>

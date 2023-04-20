@@ -1,0 +1,28 @@
+.theme-input {
+	display none
+}
+.theme-slider
+	background-color rgba(0,0,0,0.75)
+	width 60px
+	height 35px
+	border-radius 25px
+	display flex
+	padding 0 5px
+	align-items center
+	justify-content flex-start
+	cursor pointer
+	.theme-button
+		width 25px
+		height 25px
+		border-radius 50%
+		transition transform 200ms ease-in-out
+		&::before
+			content url('./../../images/sun.svg')
+
+.theme-input:checked + .theme-slider > .theme-button
+	transform translateX(25px)
+	transition transform 200ms ease-in-out	
+
+.theme-input:checked + .theme-slider > .theme-button::before
+	content url('./../../images/moon.png')
+
