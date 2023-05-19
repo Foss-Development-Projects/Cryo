@@ -1,3 +1,9 @@
 export class App {
-  sidebar : HTMLElement = document.getElementById("btn")
+  toggleTheme(){
+    // if(this.element) {
+    console.log("Working")
+      document.documentElement.style.setProperty('--default-bg-color', 'red');
+    // }
+    
+  }
 }

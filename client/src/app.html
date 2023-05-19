@@ -7,7 +7,7 @@
                     <img class="header-section-logo" src="./assets/images/chatbot.png" alt="Chatbot Logo">
                     <h1 class="header-section-title">CRYO</h1>
                     <section class="header-section-theme-button">
-                        <input class="theme-input" type="checkbox" name="theme" id="theme" />
+                        <input checked.bind="toggleTheme" class="theme-input" type="checkbox" name="theme" id="theme" />
                         <label for="theme" class="theme-slider">
                                 <span class="theme-button"></span>
                         </label>
@@ -26,7 +26,7 @@
                     </li>
               </ul>
               <form class="chat-container-input-section">
-                    <textarea rows="1" class="msg-input" type="text" name="msg" placeholder="Type A Message..."></textarea>
+                    <textarea class="msg-input" type="text" name="msg" placeholder="Type A Message..."></textarea>
                     <button type="submit" class="msg-button"><i class="fa-solid fa-paper-plane"></i></button>
               </form>
         </div>

@@ -1,15 +1,18 @@
+:root
+	--theme-button-size: 25px
 .theme-input {
 	display none
 }
 .theme-slider
-	background-color rgba(0,0,0,0.75)
+	background-color var(--default-fg-color)
 	width 60px
-	height 35px
+	height 30px
 	border-radius 25px
 	display flex
 	padding 0 5px
 	align-items center
 	justify-content flex-start
+	backdrop-filter blur(2.5px)
 	cursor pointer
 	.theme-button
 		width 25px
@@ -21,8 +24,8 @@
 
 .theme-input:checked + .theme-slider > .theme-button
 	transform translateX(25px)
-	transition transform 200ms ease-in-out	
-
+	transition transform, 200ms ease-in-out	
+	
 .theme-input:checked + .theme-slider > .theme-button::before
 	content url('./../../images/moon.png')
 
